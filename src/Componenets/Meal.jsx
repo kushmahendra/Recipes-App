@@ -9,13 +9,19 @@ const Meal = () => {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => {
+    const fetchData = async () => {
+      try {
+        const res = await fetch(url);
+        const data = await res.json();
         console.log(data.meals);
         setItem(data.meals);
         setShow(true);
-      });
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
   }, [url]);
 
   const setIndex = (alpha) => {
@@ -31,7 +37,7 @@ const Meal = () => {
   return (
     <div className="main flex flex-col items-center p-6 bg-gray-100 min-h-screen">
       <div className="heading text-center mb-8">
-        <h1 className="text-4xl font-extrabold text-gray-800">Search Your Food Recipe</h1>
+        <h1 className="text-4xl font-extrabold text-gray-800">Search Your Favorite Food Recipe</h1>
         <h4 className="scrolling-text text-lg mt-2 text-gray-600 italic">
           Savor Every Bite: The Ultimate Recipe Exploration with TastyQuest
         </h4>
