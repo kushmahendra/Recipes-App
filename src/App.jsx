@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Meal from './Componenets/Meal';
+import MealSearch  from './Componenets/MealSearch';
 import Recipeinfo from './Componenets/RecipeInfo';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
      <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Meal />} />
+          <Route path="/" element={<MealSearch  />} />
           <Route path="/:MealId" element={<Recipeinfo />} />
         </Routes>
       </div>

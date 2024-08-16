@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Mealitem from "./Mealitem";
+import Mealitems from "./Mealitems";
 import Recipeindex from "./Recipeindex";
 
-const Meal = () => {
-  const [url, setUrl] = useState("https:/www.themealdb.com/api/json/v1/1/search.php?f=a");
+const MealSearch = () => {
+  const [url, setUrl] = useState("https:/www.themealdb.com/api/json/v1/1/search.php?f=s");
   const [item, setItem] = useState();
   const [show, setShow] = useState(false);
   const [search, setSearch] = useState("");
@@ -35,7 +35,7 @@ const Meal = () => {
   };
 
   return (
-    <div className="main flex flex-col items-center p-6 bg-gray-100 min-h-screen">
+    <div className="main flex flex-col items-center p-6 min-h-screen bg-gradient-to-r from-green-200 via-yellow-200 to-blue-200">
       <div className="heading text-center mb-8">
         <h1 className="text-4xl font-extrabold text-gray-800">Search Your Favorite Food Recipe</h1>
         <h4 className="scrolling-text text-lg mt-2 text-gray-600 italic">
@@ -51,8 +51,8 @@ const Meal = () => {
           onKeyPress={searchRecipe}
         />
       </div>
-      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {show ? <Mealitem data={item} /> : <p className="text-xl text-gray-600">Not Found</p>}
+      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6">
+        {show ? <Mealitems data={item} /> : <p className="text-xl text-gray-600">Not Found</p>}
       </div>
       <div className="indexcontainer mt-12 flex flex-wrap justify-center">
         <Recipeindex alphaIndex={(alpha) => setIndex(alpha)} />
@@ -61,4 +61,4 @@ const Meal = () => {
   );
 };
 
-export default Meal;
+export default MealSearch ;

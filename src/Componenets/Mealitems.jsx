@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const Mealitem = ({ data }) => {
+const Mealitems = ({ data }) => {
   const navigate = useNavigate();
   return (
     <>
@@ -27,4 +27,4 @@ const Mealitem = ({ data }) => {
   );
 };
 
-export default Mealitem;
+export default Mealitems;
