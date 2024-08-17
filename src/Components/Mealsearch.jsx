@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Mealitems from "./Mealitems";
 import Recipeindex from "./Recipeindex";
 
-const MealSearch = () => {
+const Mealsearch = () => {
   const [url, setUrl] = useState("https:/www.themealdb.com/api/json/v1/1/search.php?f=s");
   const [item, setItem] = useState();
   const [show, setShow] = useState(false);
@@ -61,4 +61,4 @@ const MealSearch = () => {
   );
 };
 
-export default MealSearch ;
+export default Mealsearch ;
