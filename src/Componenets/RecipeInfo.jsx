@@ -35,10 +35,10 @@ const Recipeinfo = () => {
     <>
       {item && (
         <>
-          <div className="content p-8 bg-gradient-to-r from-orange-400 via-blue-300 to-green-300 shadow-xl rounded-lg text-white">
+          <div className="content content p-8 bg-gradient-to-r from-yellow-200 via-orange-400 to-red-300 shadow-2xl rounded-xl text-white">
             <div className="button-container mb-6">
               <Link to="/">
-                <button className="top-button bg-yellow-400 text-gray-800 px-6 py-3 rounded-full hover:bg-yellow-500 transition-all transform hover:scale-105">
+                <button className="top-button bg-yellow-400 text-white px-6 py-3 rounded-full hover:bg-yellow-500 transition-all transform hover:scale-105">
                   Home
                 </button>
               </Link>
@@ -63,20 +63,24 @@ const Recipeinfo = () => {
 
                 return (
                   item[ingredientKey] && (
-                    <ul key={index} className="list-disc ml-5">
-                      <li className="text-lg text-gray-700">
-                        {item[ingredientKey]}: {item[measureKey]}
-                      </li>
-                    </ul>
+                    <ul key={index} className="list-[square] ml-5">
+                     <li className="text-lg text-gray-700">
+                     {item[ingredientKey]}: {item[measureKey]}
+                     </li>
+                  </ul>
                   )
                 );
               })}
             </div>
             <div className="instructions bg-green-100 bg-opacity-80 p-6 rounded-lg shadow-md">
               <h2 className="text-3xl font-semibold mb-4 text-red-500">Instructions</h2>
-              <p className="text-lg text-gray-700 leading-relaxed">{item.strInstructions}</p>
-            </div>
-          </div>
+              {item.strInstructions.split('STEP').filter(Boolean).map((step, index) => (
+              <p key={index} className="text-lg text-gray-700 leading-relaxed mb-4">
+              <span className="text-green-500">STEP </span>{step.trim()}
+              </p>
+              ))}
+           </div>
+        </div>
  <div className="container mx-auto my-6 p-4 rounded-lg shadow-lg bg-white max-w-7xl">
   <iframe
     src={`https://www.youtube.com/embed/${videoID}`}
