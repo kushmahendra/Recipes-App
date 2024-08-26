@@ -35,10 +35,10 @@ const Recipeinfo = () => {
     <>
       {item && (
         <>
-          <div className="content content p-8 bg-gradient-to-r from-yellow-200 via-orange-400 to-red-300 shadow-2xl rounded-xl text-white">
+          <div className="content content p-8 bg-gradient-to-r from-green-200 via-yellow-200 to-blue-200 shadow-2xl rounded-xl text-white">
             <div className="button-container mb-6">
               <Link to="/">
-                <button className="top-button bg-yellow-400 text-white px-6 py-3 rounded-full hover:bg-yellow-500 transition-all transform hover:scale-105">
+                <button className="top-button bg-green-800 text-white px-6 py-3 rounded-full hover:bg-yellow-500 transition-all transform hover:scale-105">
                   Home
                 </button>
               </Link>
@@ -49,9 +49,9 @@ const Recipeinfo = () => {
               className="w-full h-72 object-cover rounded-lg shadow-lg mb-6"
             />
             <div className="inner-content">
-              <h1 className="text-4xl font-extrabold">{item.strMeal}</h1>
-              <h2 className="text-3xl mt-3">{item.strArea} Food</h2>
-              <h3 className="text-2xl mt-2">Category: {item.strCategory}</h3>
+              <h1 className="text-3xl font-extrabold">{item.strMeal}</h1>
+              <h2 className="text-2xl mt-2">{item.strArea} Food</h2>
+              <h3 className="text-xl mt-1">Category: {item.strCategory}</h3>
             </div>
           </div>
           <div className="recipe-details mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -76,7 +76,7 @@ const Recipeinfo = () => {
               <h2 className="text-3xl font-semibold mb-4 text-red-500">Instructions</h2>
               {item.strInstructions.split('STEP').filter(Boolean).map((step, index) => (
               <p key={index} className="text-lg text-gray-700 leading-relaxed mb-4">
-              <span className="text-green-500">STEP </span>{step.trim()}
+            {step.trim()}
               </p>
               ))}
            </div>
