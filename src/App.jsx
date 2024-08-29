@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Mealsearch from './Components/MealSearch';
+import Mealsearch from './Components/Mealsearch';
 import Recipeinfo from './Components/RecipeInfo';
 
 

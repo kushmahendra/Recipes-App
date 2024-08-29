@@ -8,12 +8,15 @@ const Recipeindex = ({ alphaIndex }) => {
 
   return (
     <>
-<div className="border border-purple-600 rounded-xl my-2 bg-gradient-to-r from-green-200 via-yellow-200 to-blue-200 shadow-2xl ">
-<h1 className="text-white font-semibold text-xl py-2 border-2 border-white px-1 m-2 inline-block rounded-lg bg-green-700">Explore Recipes by Clicking a Letter</h1>
-    <div className="flex flex-wrap justify-center">
+<div className="border border-purple-600 rounded-xl  my-2 bg-gradient-to-r from-green-200 via-yellow-200 to-blue-200 shadow-2xl ">
+<div className="text-center">
+<h1 className="text-white font-semibold  text-xl py-2 border-2 border-white px-1 m-2 inline-block rounded-lg bg-green-700">Explore Recipes by Clicking a Letter</h1>
+    
+</div>
+<div className="flex flex-wrap justify-center">
       {alpha.map((item) => (
         <div
-          className="numBox m-2 p-3 bg-orange-900 text-white rounded-full cursor-pointer transition-colors hover:bg-green-600 hover:text-white"
+          className="numBox m-2 p-3 bg-orange-600 text-white rounded-full cursor-pointer transition-colors hover:bg-green-600 hover:text-white"
           key={num++}
           onClick={() => alphaIndex(item)}
         >

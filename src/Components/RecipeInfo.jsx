@@ -35,8 +35,8 @@ const Recipeinfo = () => {
     <>
       {item && (
         <>
-          <div className="content content p-8 bg-gradient-to-r from-green-200 via-yellow-200 to-blue-200 shadow-2xl rounded-xl text-white">
-            <div className="button-container mb-6">
+          <div className="content content p-8 bg-gradient-to-r from-green-200 via-yellow-200 to-blue-200 shadow-2xl  text-white">
+            <div className="button-container text-center mb-6">
               <Link to="/">
                 <button className="top-button bg-green-800 text-white px-6 py-3 rounded-full hover:bg-yellow-500 transition-all transform hover:scale-105">
                   Home
@@ -48,15 +48,15 @@ const Recipeinfo = () => {
               alt=""
               className="w-full h-72 object-cover rounded-lg shadow-lg mb-6"
             />
-            <div className="inner-content">
+            <div className="inner-content text-center text-orange-800">
               <h1 className="text-3xl font-extrabold">{item.strMeal}</h1>
               <h2 className="text-2xl mt-2">{item.strArea} Food</h2>
               <h3 className="text-xl mt-1">Category: {item.strCategory}</h3>
             </div>
           </div>
           <div className="recipe-details mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="ingredients bg-orange-100 bg-opacity-80 p-6 rounded-lg shadow-md">
-              <h2 className="text-3xl font-semibold mb-4 text-purple-600">Ingredients</h2>
+            <div className="ingredients bg-orange-100 bg-opacity-80 mx-4 p-6 rounded-lg shadow-md">
+              <h2 className="text-3xl font-semibold mb-4  text-purple-600">Ingredients</h2>
               {Array.from({ length: 20 }, (_, i) => i + 1).map((index) => {
                 const ingredientKey = `strIngredient${index}`;
                 const measureKey = `strMeasure${index}`;
@@ -72,7 +72,7 @@ const Recipeinfo = () => {
                 );
               })}
             </div>
-            <div className="instructions bg-green-100 bg-opacity-80 p-6 rounded-lg shadow-md">
+            <div className="instructions bg-green-100 mx-4 bg-opacity-80 p-6 rounded-lg shadow-md">
               <h2 className="text-3xl font-semibold mb-4 text-red-500">Instructions</h2>
               {item.strInstructions.split('STEP').filter(Boolean).map((step, index) => (
               <p key={index} className="text-lg text-gray-700 leading-relaxed mb-4">
