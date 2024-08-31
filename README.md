@@ -48,19 +48,29 @@ This command will run the development server, and you can access the app at http
 
 Usage
 Search Recipes: Use the search bar to find recipes by name or ingredients.
+
 View Details: Click on a recipe to view its details, including ingredients and cooking instructions.
+
 Save Recipes: Click the "Save" button to add recipes to your favorite list.
+
 User Authentication: Register or log in to save recipes and manage your profile.
+
 Development Mode: Run npm run dev to start the development server.
+
 Production Build: Run npm run build to build the app for production.
+
 Run Tests: (If any tests are included) Run npm test to execute the tests.
 
 
 Scripts
 npm run dev: Starts the development server.
+
 npm start: Runs the built application in production mode.
+
 npm run build: Builds the app for production to the build folder.
+
 npm run test: Runs the test suite.
+
 npm run eject: Ejects the app configuration (use with caution).
 
 
