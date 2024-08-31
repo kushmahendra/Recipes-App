@@ -46,7 +46,8 @@ npm run dev
 
 This command will run the development server, and you can access the app at http://localhost:3000.
 
-Usage
+**Usage**
+
 Search Recipes: Use the search bar to find recipes by name or ingredients.
 
 View Details: Click on a recipe to view its details, including ingredients and cooking instructions.
@@ -62,7 +63,8 @@ Production Build: Run npm run build to build the app for production.
 Run Tests: (If any tests are included) Run npm test to execute the tests.
 
 
-Scripts
+**Scripts**
+
 npm run dev: Starts the development server.
 
 npm start: Runs the built application in production mode.
@@ -74,7 +76,8 @@ npm run test: Runs the test suite.
 npm run eject: Ejects the app configuration (use with caution).
 
 
-Technologies Used
+**Technologies Used**
+
 React.js: Front-end library for building user interfaces.
 Node.js: JavaScript runtime environment for server-side scripting.
 Babel: JavaScript compiler to use the latest JavaScript features.
