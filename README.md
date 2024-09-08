@@ -1,11 +1,4 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 # Recipe App
 
 A user-friendly Recipe App built with React.js, styled using Tailwind CSS, and powered by a Node.js backend. This application allows users to search, view, and save their favorite recipes. It provides an interactive UI for managing recipes, ingredient lists, and preparation instructions.
