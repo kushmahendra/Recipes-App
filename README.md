@@ -1,7 +1,7 @@
 
 # Recipe App
 
-A user-friendly Recipe App built with React.js, styled using Tailwind CSS, and powered by a Node.js backend. This application allows users to search, view, and save their favorite recipes. It provides an interactive UI for managing recipes, ingredient lists, and preparation instructions.
+A user-friendly Recipe App built with React.js and styled using Tailwind CSS. This application allows users to search, view. It provides an interactive UI for managing recipes, ingredient lists, and preparation instructions.
 
 ## Features
 
@@ -17,13 +17,13 @@ Follow these steps to set up the project locally:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/recipe-app.git
+   git clone https://github.com/kushmahendra/recipe-app.git
    
-**cd recipe-app**
+   cd recipe-app
 
 Install dependencies: Make sure you have Node.js and npm installed on your system. 
 
-Then,run: npm install
+Then,run: **npm install**
 
 Start the development server:You can start the development server using npm:
 
@@ -31,7 +31,7 @@ Start the development server:You can start the development server using npm:
 
 This command will run the development server, and you can access the app at http://localhost:3000.
 
-**Usage**
+## Usage
 
 **Search Recipes:** Use the search bar to find recipes by name or ingredients.
 
@@ -56,6 +56,9 @@ This command will run the development server, and you can access the app at http
 **Technologies Used**
 
 **React.js:** Front-end library for building user interfaces.
+
 **Babel:** JavaScript compiler to use the latest JavaScript features.
+
 **Tailwind CSS:** Utility-first CSS framework for designing the app's layout and styles.
+
 **Git Bash:** Terminal to manage Git and run commands
