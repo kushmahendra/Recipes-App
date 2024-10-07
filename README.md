@@ -44,7 +44,7 @@ This command will run the development server, and you can access the app at http
 **Production Build:** Run npm run build to build the app for production.
 
 
-**Scripts**
+## Scripts
 
 **npm run dev:** Starts the development server.
 
@@ -53,7 +53,7 @@ This command will run the development server, and you can access the app at http
 **npm run build:** Builds the app for production to the build folder.
 
 
-**Technologies Used**
+## Technologies Used
 
 **React.js:** Front-end library for building user interfaces.
 
